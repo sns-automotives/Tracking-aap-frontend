@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
     if (storedUser && token) {
       setUser(JSON.parse(storedUser));
     }
-  }, []);
+  }, [token]);
 
   const login = (userData, authToken) => {
     setUser(userData);
